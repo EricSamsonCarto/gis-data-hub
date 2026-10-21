@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Rewrite any OGR-readable vector file as a remote-friendly GeoParquet:
-# zstd compression, bbox covering column, rows sorted spatially so readers can skip row groups.
-# Usage: scripts/prep-geoparquet.sh <input> [output]   (default output: data/geoparquet/<name>.parquet)
+# re-writes any gis data in geoparquet with:
+# zstd compression, bbox covering column, rows sorted spatially.
+# scripts/prep-geoparquet.sh <input> [output]
 set -euo pipefail
 
 in="${1:?usage: $0 <input> [output]}"
