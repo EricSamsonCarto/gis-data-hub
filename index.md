@@ -20,5 +20,5 @@ PMTiles and GeoParquet files, readable remotely (MapLibre, DuckDB, QGIS, GDAL `/
 {% if parquet.size == 0 %}None yet.{% else %}
 | File | URL |
 |------|-----|
-{% for f in parquet %}| {{ f.name }} | `{{ f.path | absolute_url }}` |
+{% for f in parquet %}| [{{ f.name }}](https://do-me.github.io/geoparquet-visualizer/?url={{ f.path | absolute_url }}) | `{{ f.path | absolute_url }}` |
 {% endfor %}{% endif %}
