@@ -2,7 +2,6 @@
 title: GIS Data Hub
 ---
 
-PMTiles and GeoParquet files, readable remotely (MapLibre, DuckDB, QGIS, GDAL `/vsicurl/`).
 
 {% assign pmtiles = site.static_files | where: "extname", ".pmtiles" %}
 {% assign parquet = site.static_files | where: "extname", ".parquet" %}
