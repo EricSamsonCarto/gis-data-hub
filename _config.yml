@@ -1,3 +1,3 @@
 title: GIS Data Hub
-description: Eric's PMTiles and GeoParquet files
+description: PMTiles and GeoParquet files served from GitHub Pages. Every URL supports range requests and CORS, so you can read them straight from MapLibre, QGIS, DuckDB or GDAL.
 exclude: [README.md, LICENSE, docs, scripts]
