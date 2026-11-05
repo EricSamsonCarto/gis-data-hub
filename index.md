@@ -18,3 +18,5 @@ title: GIS Data Hub
 <ul class="files">
 {% for f in parquet %}{% assign url = f.path | absolute_url %}{% assign view = site.data.views[f.name] %}  <li><a class="name" href="https://do-me.github.io/geoparquet-visualizer/?url={{ url }}{% if view %}&map={{ view }}/0/0{% endif %}" target="_blank" rel="noopener">{{ f.name }}</a><code>{{ url }}</code><button type="button" data-url="{{ url }}">Copy URL</button></li>
 {% endfor %}</ul>{% endif %}
+
+<br>
